@@ -11,9 +11,3 @@
 //   console.log(finalOutput);
 // }
 // getFibonacci(10);
-
-// function getFibonacciCount(n) {
-//   if (n <= 1) return n;
-//   return getFibonacciCount(n - 1) + getFibonacciCount(n - 2);
-// }
-// console.log({number: getFibonacciCount(10)});
