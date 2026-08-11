@@ -7,7 +7,7 @@ for item in arr:
     if item not in unique_result:
         unique_result.append(item)
 
-print("unique_result: ", unique_result)
+print("unique_result: ", unique_result) # [1, 2, 3, 4, 5]
 
 non_duplicate_result = [item for item in arr if arr.count(item) ==1]
-print("non_duplicate_result:", non_duplicate_result)
+print("non_duplicate_result:", non_duplicate_result) # [2, 4, 5]
