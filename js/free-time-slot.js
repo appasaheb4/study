@@ -8,21 +8,25 @@ function getFreeTimeSlots(...schedules) {
       intervals.push(interval);
     }
   }
-  //console.log({intervals});
+  // console.log({intervals});
+
   // Step 2 : Sort by start time
   intervals.sort((a, b) => a[0] - b[0]);
-  console.log({sort: intervals});
+  //console.log({sort: intervals});
 
   // Step 3: Merge overlapping intervals
   let merged = [];
   for (let interval of intervals) {
     if (merged.length === 0 || merged[merged.length - 1][1] < interval[0]) {
+      // console.log({interval});
       merged.push([...interval]);
     } else {
+      //console.log({item: merged[merged.length - 1][1]});
       merged[merged.length - 1][1] = Math.max(
         merged[merged.length - 1][1],
         interval[1],
       );
+      //console.log({item: merged[merged.length - 1][1]});
     }
   }
   //   console.log({merged});

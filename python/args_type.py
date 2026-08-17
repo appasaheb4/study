@@ -1,6 +1,7 @@
 def args_type(*args):
+    # here always come in tuple format
     print({"datatype":type(args)})
-    print(args)
-
-args_type(1, 2, 3, 4, 5)
-args_type('a', 'b', 'c', 'd', 'e')
+    # print(args)
+print(args_type(1, 2, 3, 4, 5))
+print(type((1, 2, 3, 4, 5)))
+print(type([1,2,3,4,5]))

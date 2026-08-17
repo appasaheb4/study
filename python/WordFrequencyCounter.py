@@ -1,5 +1,6 @@
 def word_frequency(str):
     arr_str = str.split()
+    # print(arr_str)
     obj={}
     for item in arr_str:
         if item in obj:

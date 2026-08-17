@@ -5,11 +5,9 @@ def get_result(arr):
     for row in arr:
         if isinstance(row,list):
             result.extend(get_result(row))
-
         else:
             result.append(row)
     return result
-
 print(get_result(nested))
 
 
@@ -29,9 +27,7 @@ print(list(flatten(nested)))
 
 ```
 # ip = [-1,0,1,2,-1,-4]
-
 # target=0
-
 # output = [[-1, 0, 1], [-1, 2, -1], [0, 1, -1]]
 
  def getResult(arr):
@@ -47,7 +43,5 @@ print(list(flatten(nested)))
 print(getResult(ip))
 
 ```
-
-## Secret break
 
 ## CAP Theorem
