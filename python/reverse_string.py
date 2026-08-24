@@ -17,5 +17,4 @@ print(reverse_string1("I love india"))
 
 
 print('new methods'[::-1])
-print(sum((10,20,5)))
-print(sum([1,2,3,4]))
+

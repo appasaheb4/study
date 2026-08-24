@@ -12,7 +12,7 @@ export const useThemeFromUrl = () => {
     }
   }, []);
 
-  return {theme};
+  return [theme];
 };
 
 // http://localhost:3000/?theme=dark

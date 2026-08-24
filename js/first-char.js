@@ -1,13 +1,13 @@
-// function firstChar(str) {
-//   for (let i = 0; i < str.length; i++) {
-//     if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
-//       return str[i];
-//     }
-//   }
-//   return null;
-// }
-
 function firstChar(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      return str[i];
+    }
+  }
+  return null;
+}
+
+function firstChar1(str) {
   const counts = {};
   [...str].forEach((char) => {
     counts[char] = (counts[char] || 0) + 1;

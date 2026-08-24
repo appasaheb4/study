@@ -8,6 +8,10 @@ for f in funcs:
 ## output
 # 4
 # 4
+# 4 
 # 4
 # 4
-# 4
+
+# ## solution
+# for i in range(5):
+#     funcs.append(lambda x=i:x)

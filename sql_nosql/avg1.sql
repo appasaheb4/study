@@ -13,3 +13,8 @@ db.employee.aggregate([{
     {$skip:1},
     {$limit:1}
 }])
+
+--clustered index physically orders the table data
+--Non-clustered index creates a separate reference structure for the data.
+
+
