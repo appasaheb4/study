@@ -11,7 +11,6 @@ for item in input1:
         if ch in map1:
             stack.append(ch)
         elif ch in map1.values():
-            print(map1[stack.pop()])
             if not stack or map1[stack.pop()] !=ch:
                 result_str = "not"
                 break
