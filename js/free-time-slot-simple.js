@@ -11,6 +11,7 @@ function getCommonFreeTime(...schedules) {
   // Merge overlapping intervals
   let merged = [];
   for (let [start, end] of intervals) {
+    // console.log({start, end});
     if (!merged.length || merged[merged.length - 1][1] < start) {
       merged.push([start, end]);
     } else {
@@ -19,16 +20,14 @@ function getCommonFreeTime(...schedules) {
         end,
       );
     }
+    // break;
   }
-
-  console.log({merged});
-
+  // console.log({merged});
   // Find gaps (free times)
   let freeTimes = [];
   for (let i = 1; i < merged.length; i++) {
     freeTimes.push([merged[i - 1][1], merged[i][0]]);
   }
-
   return freeTimes;
 }
 

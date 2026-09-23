@@ -5,9 +5,6 @@ const result = arr1.reduce((acc, curr) => {
   return acc;
 }, []);
 
-// console.log(result);
-
 // const result = [...new Set(arr1)];
 // console.log(result);
-
 console.log({result});

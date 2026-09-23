@@ -20,4 +20,4 @@ function firstChar1(str) {
   }
 }
 
-console.log({value: firstChar('aabbcdde')});
+console.log({value: firstChar1('aabbcdde')});
